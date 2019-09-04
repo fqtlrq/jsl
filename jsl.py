@@ -19,7 +19,7 @@ app.config['MONGODB_SETTINGS'] = {
     'host': 'localhost',
     'port': 27017
 }
-app.config['SECRET_KEY'] = 'sEcsEc'
+app.config['SECRET_KEY'] = 'test'
 db = MongoEngine()
 db.init_app(app)
 login_manager = LoginManager()
@@ -27,8 +27,8 @@ login_manager.init_app(app)
 admin = Admin(name="jiasule",url='/admin',template_mode="bootstrap3")
 admin.init_app(app)
 
-app.config['BASIC_AUTH_USERNAME'] = 'xinxin'
-app.config['BASIC_AUTH_PASSWORD'] = 'jsl123456aA'
+app.config['BASIC_AUTH_USERNAME'] = 'test'
+app.config['BASIC_AUTH_PASSWORD'] = 'test'
 basic_auth = BasicAuth(app)
 
 babel = Babel(app)
